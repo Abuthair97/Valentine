@@ -1,7 +1,7 @@
 const answers = [
     "Are you sure?",
     "Are you really sure??",
-    "Are you really realy sure???",
+    "Are you really really sure???",
     "Think again?",
     "Don't believe in second chances?",
     "Why are you being so cold?",
@@ -21,7 +21,7 @@ let i = 0;
 
 no_button.addEventListener('click',()=>{
     let banner = document.getElementById("banner");
-    banner.src='./no.gif'
+    banner.src='./assets/no.gif'
     change();
     let total = answers.length;
     // no_button.style.position="absolute"
@@ -44,7 +44,7 @@ yes_button.addEventListener('click', () => {
     document.querySelector(".heading").style.display = "none";
     // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "./yes.gif";
+    banner.src = "./assets/yes.gif";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
@@ -63,8 +63,8 @@ function refreshBanner() {
 }
 function change()
 {
-    var i = Math.floor(Math.random()*500)+1;
-    var j = Math.floor(Math.random()*500)+1;
+    let i = Math.floor(Math.random()*500)+1;
+    let j = Math.floor(Math.random()*500)+1;
      no_button.style.left = i+"px";
      no_button.style.top = j+"px";
 
