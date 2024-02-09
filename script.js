@@ -64,7 +64,7 @@ function refreshBanner() {
 function change()
 {
     let i = Math.floor(Math.random()*500)+1;
-    let j = Math.floor(Math.random()*500)+1;
+    let j = Math.floor(Math.random()*300)+1;
      no_button.style.left = i+"px";
      no_button.style.top = j+"px";
 
